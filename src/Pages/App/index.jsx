@@ -1,22 +1,28 @@
-import Home from "../Home";
-import MyAccount from "../MyAccount";
-import MyOrder from "../MyOrder";
-import MyOrders from "../MyOrders";
-import NotFound from "../NotFound";
-import SignIn from "../SignIn";
+import { useRoutes, BrowserRouter } from "react-router-dom";
+import Home from "../home";
+import AboutMe from "../about-me";
+import Projects from "../projects";
+import Contact from "../contact";
+import NotFound from "../not-found";
 import "./App.css";
 
-function App() {
+const AppRoutes = () => {
+  let routes = useRoutes([
+    { path: "/", element: <Home /> },
+    { path: "/about-me", element: <AboutMe /> },
+    { path: "/projects", element: <Projects /> },
+    { path: "/contact", element: <Contact /> },
+    { path: "/*", element: <NotFound /> },
+  ]);
+  return routes;
+};
+
+const App = () => {
   return (
-    <div className="bg-red-100">
-      <Home />
-      <MyAccount />
-      <MyOrder />
-      <MyOrders />
-      <NotFound />
-      <SignIn />
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
