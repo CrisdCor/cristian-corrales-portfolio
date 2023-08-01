@@ -4,6 +4,7 @@ import AboutMe from "../about-me";
 import Projects from "../projects";
 import Contact from "../contact";
 import NotFound from "../not-found";
+import MyHeader from  "../../Components/Header"
 import "./App.css";
 
 const AppRoutes = () => {
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <AppRoutes />
+      <MyHeader />
     </BrowserRouter>
   );
 };
