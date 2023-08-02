@@ -1,4 +1,21 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Exo 2', sans-serif;
+}
+
 body{
     margin: 0;
     box-sizing: border-box;
+}
+
+.text-m{
+    font-size: 1.6rem;
+}
+
+.text-l{
+    font-size: 1.8rem;
+}
+
+.text-lg{
+    font-size: 2.4rem;
 }

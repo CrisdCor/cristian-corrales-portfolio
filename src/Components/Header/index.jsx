@@ -1,20 +1,18 @@
-import "./Header.css";
+import "./styles.css";
 
 
 const MyHeader = ()=>{
     return(
-        <div className="header-container">
-            <div>
-                <p>MENÚ</p>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+        <header className="header">
+            <div className="button-menu">
+                <p className="button-menu__text text-m">MENÚ</p>
+                <span className="button-menu__bar button-menu__bar--top "></span>
+                <span className="button-menu__bar button-menu__bar--medium-first"></span>
+                <span className="button-menu__bar button-menu__bar--medium-second"></span>
+                <span className="button-menu__bar button-menu__bar--bottom"></span>
             </div>
-            <figure>
-                <img src="" alt="" />
-            </figure>
-        </div>
+            <img className="header__logo"  src="" alt="logo de Cristian Corrales" />
+        </header>
     )
 }
 
