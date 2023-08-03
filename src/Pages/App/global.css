@@ -1,0 +1,29 @@
+/*Reset CSS*/
+
+html {
+  font-size: 62.5%;
+  font-family: "Exo 2", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Text - Sizes*/
+
+.text-m {
+  font-size: 1.6rem;
+}
+
+.text-l {
+  font-size: 1.8rem;
+}
+
+.text-lg {
+  font-size: 2.4rem;
+}
+
+/*Vars - Colors*/
+
+

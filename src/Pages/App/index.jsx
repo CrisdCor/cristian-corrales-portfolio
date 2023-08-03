@@ -4,8 +4,10 @@ import AboutMe from "../about-me";
 import Projects from "../projects";
 import Contact from "../contact";
 import NotFound from "../not-found";
-import MyHeader from  "../../Components/Header"
+import MyHeader from  "../../Containers/Header"
 import "./App.css";
+import "./global.css";
+
 
 const AppRoutes = () => {
   let routes = useRoutes([
