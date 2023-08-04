@@ -1,0 +1,40 @@
+@import url(../../Pages/App/Vars.css);
+
+.button-menu {
+  position: relative;
+  height: 2.6rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-menu__bar {
+  position: absolute;
+  height: 0.2rem;
+  border-radius: 0.5rem;
+  background: var(--white);
+}
+
+.button-menu__bar--top{
+    top: 0;
+    width: 3.5rem;
+}
+
+.button-menu__bar--medium-first{
+    top: calc(50% - 0.1rem);
+    left: 35%;
+    width: 0.5rem;
+}
+
+.button-menu__bar--medium-second{
+    top: calc(50% - 0.1rem);
+    left: 50%;
+    width: 2.5rem;
+}
+
+.button-menu__bar--bottom{
+    bottom: 0;
+    width: 3.5rem;
+}

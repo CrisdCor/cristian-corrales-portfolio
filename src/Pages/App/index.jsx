@@ -6,7 +6,8 @@ import Contact from "../contact";
 import NotFound from "../not-found";
 import MyHeader from  "../../Containers/Header"
 import "./App.css";
-import "./global.css";
+import "./Global.css";
+import "./Vars.css";
 
 
 const AppRoutes = () => {
