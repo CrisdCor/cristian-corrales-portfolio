@@ -1,0 +1,42 @@
+@import url(../../Pages/App/Vars.css);
+
+.list-container {
+  width: 100%;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.list-container__item {
+  width: 100%;
+  text-align: center;
+  transform: translateX(-100%);
+  animation: show-list-items-menu 0.6s ease-in-out forwards;
+}
+
+@keyframes show-list-items-menu {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.list-container__item--home {
+  animation-delay: 0.2s;
+}
+
+.list-container__item--about-me {
+  animation-delay: 0.4s;
+}
+
+.list-container__item--projects {
+  animation-delay: 0.6s;
+}
+
+.list-container__item--contact {
+  animation-delay: 0.8s;
+}

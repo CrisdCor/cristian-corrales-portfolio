@@ -2,39 +2,76 @@
 
 .button-menu {
   position: relative;
-  height: 2.6rem;
-  width: 7rem;
+  height: 100%;
+  width: 4.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.button-menu__bar {
+.button-menu__text {
   position: absolute;
+  text-align: center;
+  transform: scale(1.2);
+  transform-origin: bottom;
+  transition: 1s;
+  opacity: 0;
+}
+
+.button-menu .button-menu__text--close {
+  opacity: 1;
+}
+
+.button-menu span {
+  position: absolute;
+  width: 3.4rem;
   height: 0.2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   background: var(--white);
+  transition: all 0.5s;
 }
 
-.button-menu__bar--top{
-    top: 0;
-    width: 3.5rem;
+.button-menu .button-menu__bar-top {
+  top: 0;
+  left: 0;
 }
 
-.button-menu__bar--medium-first{
-    top: calc(50% - 0.1rem);
-    left: 35%;
-    width: 0.5rem;
+.button-menu__bar-top--close {
+  transform: translateX(1.9rem) scaleX(0.7);
+  transition: transform 0.6s;
 }
 
-.button-menu__bar--medium-second{
-    top: calc(50% - 0.1rem);
-    left: 50%;
-    width: 2.5rem;
+.button-menu .button-menu__bar-medium-first {
+  top: calc(50% - 0.1rem);
+  left: 1.5rem;
+  width: 0.5rem;
 }
 
-.button-menu__bar--bottom{
-    bottom: 0;
-    width: 3.5rem;
+.button-menu__bar-medium-first--close {
+  transition: transform 0.6s;
+  transform: translateX(-2.2rem) scaleX(0.4) scaleY(3);
+}
+
+.button-menu .button-menu__bar-medium-second {
+  top: calc(50% - 0.1rem);
+  left: 2.3rem;
+  width: 2rem;
+}
+
+.button-menu__bar-medium-second--close {
+  transition: transform 0.6s;
+  transform: translateX(0.7rem) scaleX(0.1) scaleY(3);
+  transform-origin: right;
+}
+
+.button-menu__bar-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.button-menu__bar-bottom--close {
+  transition: transform 0.6s;
+  transform: scaleX(0.7);
+  transform-origin: left;
 }

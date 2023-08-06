@@ -1,5 +1,5 @@
 import Layout from "../../Components/Layout";
-import "./styles.css"
+import "./styles.css";
 
 function Home() {
   return (

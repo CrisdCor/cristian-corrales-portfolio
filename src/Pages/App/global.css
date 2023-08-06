@@ -12,6 +12,14 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background: var(--dark-blue);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
 
 /*Text - Size*/
 
@@ -37,18 +45,18 @@ html {
 
 /*Text - Colors*/
 
-.text-dark{
+.text-dark {
   color: var(--dark-blue);
 }
 
-.text-light{
+.text-light {
   color: var(--soft-blue);
 }
 
-.text-white{
+.text-white {
   color: var(--white);
 }
 
-.text-cyan{
-  color:var(--cyan);
+.text-cyan {
+  color: var(--cyan);
 }
