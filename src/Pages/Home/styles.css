@@ -1,7 +1,7 @@
-.home {
+.home{
+  width: 100%;
+  max-width: 128rem;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
   color: white;
 }

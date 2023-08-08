@@ -1,0 +1,15 @@
+.social-networks{
+    width: 100%;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.social-networks__icon{
+    height: 100%;
+}
+
+.social-networks__icon img{
+    width: 100%;
+}

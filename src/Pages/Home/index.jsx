@@ -4,7 +4,12 @@ import "./styles.css";
 function Home() {
   return (
     <Layout>
-      <div className="home text-m">HOME</div>
+      <main className="home">
+        <div className="home__text-greeting">
+          <p></p>
+          <p></p>
+        </div>
+      </main>
     </Layout>
   );
 }
