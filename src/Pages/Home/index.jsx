@@ -1,4 +1,5 @@
 import Layout from "../../Components/Layout";
+import SocialNetworks from "../../Components/SociaNetworks";
 import "./styles.css";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
           <p></p>
           <p></p>
         </div>
+        <SocialNetworks/>
       </main>
     </Layout>
   );
