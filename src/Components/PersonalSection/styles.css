@@ -1,19 +1,19 @@
-.personal-section{
-    width: 100%;
-    height: auto;
-    display: flex;
+.personal-section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.8rem;
+  display: flex;
+  gap: 1.8rem;
 }
 
-.personal-section__image{
-    width: 3.8rem;
-    height: 36rem;
+.personal-section__image {
+  width: 3.8rem;
 }
 
-.personal-section__image img{
-    width: 100%;
+.personal-section__image img {
+  width: 100%;
 }
 
-.personal-section__text{
-    width: 100%;
-    padding: 0 0 0 1.8rem;
+.personal-section__text {
+  width: 100%;
 }

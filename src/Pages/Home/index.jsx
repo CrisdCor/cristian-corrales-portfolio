@@ -6,11 +6,27 @@ function Home() {
   return (
     <Layout>
       <main className="home">
-        <div className="home__text-greeting">
-          <p></p>
-          <p></p>
+        <div className="home__greeting">
+          <p className="text-lg">Hola,</p>
+          <p className="text-lg">Yo soy</p>
+          <div className="line-decoration">
+            <span className="line-decoration--line"></span>
+            <span className="line-decoration--circle"></span>
+          </div>
         </div>
-        <SocialNetworks/>
+        <figure>
+          <img src="" alt="" />
+        </figure>
+        <div className="line-decoration">
+          <span className="line-decoration--circle"></span>
+          <span className="line-decoration--circle"></span>
+          <span className="line-decoration--line"></span>
+        </div>
+        <div>
+          <p className="text-lg">Profesional en Mercadro &</p>
+          <p className="text-lg">Desarrollador Web</p>
+        </div>
+        <SocialNetworks />
       </main>
     </Layout>
   );

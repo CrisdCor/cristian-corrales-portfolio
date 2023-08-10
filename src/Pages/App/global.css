@@ -56,38 +56,38 @@ h2 {
 }
 /*Text-align*/
 
-.text-left{
-  text-align:left;
+.text-left {
+  text-align: left;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
 /*Lines Decoration */
 
-.line-decoration{
+.line-decoration {
   width: 100%;
-  height: .5rem;
+  height: 0.5rem;
+  margin: 0.8rem 0;
   display: flex;
   align-items: center;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
-.line-decoration--line{
+.line-decoration--line {
   width: 100%;
   height: 0.1rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   background: var(--cyan);
 }
 
-.line-decoration--circle{
-  width: .5rem;
-  height: .5rem;
+.line-decoration--circle {
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background: var(--cyan);
 }
-

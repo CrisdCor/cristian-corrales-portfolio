@@ -3,12 +3,14 @@ import "./styles.css";
 
 const PersonalSection = () => {
   return (
-    <article className="personal-section">
+    <section className="personal-section">
       <figure className="personal-section__image">
         <img src={BgImageAboutMe} alt="" />
       </figure>
       <div className="personal-section__text">
-        <h2 className="personal-section__text--title text-center text-lg">01. Personal</h2>
+        <h2 className="personal-section__text--title text-center text-lg">
+          01. Personal
+        </h2>
         <div className="line-decoration">
           <span className="line-decoration--line"></span>
           <span className="line-decoration--circle"></span>
@@ -25,7 +27,7 @@ const PersonalSection = () => {
           Vel veniam odit id.
         </p>
       </div>
-    </article>
+    </section>
   );
 };
 

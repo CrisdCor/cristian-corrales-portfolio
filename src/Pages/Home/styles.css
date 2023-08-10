@@ -1,7 +1,11 @@
-.home{
+.home {
   width: 100%;
   max-width: 128rem;
   height: 100vh;
   margin: 0 auto;
-  color: white;
+  padding: 0 1.8rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 2fr 1fr;
+  place-content: center;
 }
