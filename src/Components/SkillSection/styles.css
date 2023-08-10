@@ -1,0 +1,6 @@
+.skills-section__cards{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 1.8rem;
+}

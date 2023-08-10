@@ -1,0 +1,38 @@
+@import url(../../Pages/App/Vars.css);
+
+.skills-card {
+  position: relative;
+  width: 100%;
+  height: 5.8rem;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  background: var(--soft-blue);
+}
+
+.skills-card__icon {
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-card__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-card__text--title {
+  color: var(--dark-blue);
+}
+
+.skills-card__text--text {
+  color: var(--dark-blue);
+}
