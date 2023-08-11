@@ -9,7 +9,7 @@ const CardSkills = ({ skillData }) => {
         <img src={icon} alt="" />
       </figure>
       <div className="skills-card__text">
-        <h3 className="skills-card__text--title text-m">{title}</h3>
+        <h2 className="skills-card__text--title text-m">{title}</h2>
         <p className="skills-card__text--text text-m">
           Proyectos realizados: {projects}
         </p>

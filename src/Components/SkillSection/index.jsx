@@ -9,11 +9,11 @@ import "./styles.css";
 
 const SkillSection = () => {
   const skillsData = [
-    { icon: IconHTML, title: "HTML", text: 6 },
-    { icon: IconCSS, title: "CSS", text: 6 },
-    { icon: IconJS, title: "JavaScript", text: 3 },
-    { icon: IconReact, title: "React", text: 2 },
-    { icon: IconFigma, title: "Figma", text: 3 },
+    { icon: IconHTML, title: "HTML", projects: 6 },
+    { icon: IconCSS, title: "CSS", projects: 6 },
+    { icon: IconJS, title: "JavaScript", projects: 3 },
+    { icon: IconReact, title: "React", projects: 2 },
+    { icon: IconFigma, title: "Figma", projects: 3 },
   ];
 
   return (
