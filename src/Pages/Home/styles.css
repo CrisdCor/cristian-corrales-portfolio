@@ -4,8 +4,38 @@
   height: 100vh;
   margin: 0 auto;
   padding: 0 1.8rem;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 2fr 1fr;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__top-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.top-section--text {
+  top: 0;
+  left: 0;
+}
+
+.top-section--name-image {
+  position: absolute;
+  left: 4.2rem;
+  width: 28rem;
+}
+
+.home__medium-section {
+  width: 100%;
+  height: auto;
+}
+
+.home__medium-section .line-decoration {
+  width: 70%;
+}
+
+.line-decoration--second {
+  float: right;
 }

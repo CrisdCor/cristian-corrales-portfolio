@@ -3,11 +3,11 @@
 .skills-card {
   position: relative;
   width: 100%;
+  max-width: 40rem;
   height: 5.8rem;
   padding: 0.8rem;
-  border: .1px solid var(--soft-blue);
+  border: 0.1px solid var(--soft-blue);
   border-radius: 0.6rem;
-  
 }
 
 .skills-card__icon {

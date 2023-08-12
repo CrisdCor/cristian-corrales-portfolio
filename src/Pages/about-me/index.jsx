@@ -2,8 +2,8 @@ import Layout from "../../Components/Layout";
 import PersonalSection from "../../Components/PersonalSection";
 import StudySection from "../../Components/StudySection";
 import SkillSection from "../../Components/SkillSection";
+import Link from "../../Components/Link";
 import "./styles.css";
-import SummaryDownload from "../../Components/SummaryDownload";
 
 function AboutMe() {
   return (
@@ -12,7 +12,7 @@ function AboutMe() {
         <PersonalSection />
         <StudySection />
         <SkillSection />
-        <SummaryDownload />
+        <Link />
       </main>
     </Layout>
   );

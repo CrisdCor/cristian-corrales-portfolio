@@ -1,0 +1,23 @@
+@import url("../../Pages/App/Vars.css");
+
+.link-wrap {
+  width: 100%;
+  max-width: 40rem;
+  height: 2.6rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.link-wrap__text {
+  color: var(--cyan);
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.link-wrap__image {
+  height: 2rem;
+  align-self: flex-end;
+}
