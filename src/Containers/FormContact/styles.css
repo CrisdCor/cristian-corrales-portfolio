@@ -1,0 +1,19 @@
+@import url("../../Pages/App/Vars.css");
+
+.form-contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.form-contact__form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+}

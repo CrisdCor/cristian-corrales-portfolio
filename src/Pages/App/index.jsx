@@ -1,5 +1,6 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
 import { MenuProvider } from "../../Context";
+import { ProjectProvider } from "../../Context/ProjectContext";
 import Home from "../Home";
 import AboutMe from "../about-me";
 import Projects from "../projects";
@@ -23,12 +24,14 @@ const AppRoutes = () => {
 
 const App = () => {
   return (
-    <MenuProvider>
-      <BrowserRouter>
-        <AppRoutes />
-        <MyHeader />
-      </BrowserRouter>
-    </MenuProvider>
+    <ProjectProvider>
+      <MenuProvider>
+        <BrowserRouter>
+          <AppRoutes />
+          <MyHeader />
+        </BrowserRouter>
+      </MenuProvider>
+    </ProjectProvider>
   );
 };
 

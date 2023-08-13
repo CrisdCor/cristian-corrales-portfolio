@@ -1,0 +1,23 @@
+.textarea {
+  width: 100%;
+  min-width: 28.4rem;
+  max-width: 36rem;
+  height: 16.2rem;
+  min-height: 16.2rem;
+  max-height: 16.2rem;
+  padding: 0.9rem;
+  font-family: "Exo 2", sans-serif;
+  color: var(--soft-blue);
+  border: 1px solid var(--soft-blue);
+  border-radius: 0.4rem;
+  background: transparent;
+}
+
+.textarea::placeholder {
+  color: var(--soft-blue);
+  opacity: 0.4;
+}
+
+.textarea:focus {
+  outline: 0.1rem solid var(--cyan);
+}

@@ -1,0 +1,18 @@
+.button {
+  width: 100%;
+  max-width: 34rem;
+  height: 3.4rem;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.button:hover {
+  box-shadow: 0 0 6px;
+  transition: all 0.4s;
+}

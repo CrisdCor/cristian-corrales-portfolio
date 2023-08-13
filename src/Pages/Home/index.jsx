@@ -1,5 +1,5 @@
 import Layout from "../../Components/Layout";
-import SocialNetworks from "../../Components/SociaNetworks";
+import SocialNetworks from "../../Components/SocialNetworks";
 import NameBackgorund from "../../assets/Text/HomeName.svg";
 import "./styles.css";
 
