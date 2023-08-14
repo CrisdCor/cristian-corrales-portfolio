@@ -6,10 +6,14 @@
   gap: 2.4rem;
 }
 
+.social-networks__icon img:hover{
+  color: var(--cyan);
+}
+
 .social-networks__icon {
   height: 100%;
 }
 
-.social-networks__icon img {
+.social-networks__icon img {  
   height: 100%;
 }

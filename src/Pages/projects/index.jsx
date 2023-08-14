@@ -1,5 +1,6 @@
 import Layout from "../../Components/Layout";
 import AllProjects from "../../Containers/AllProjects";
+import CardDetailProject from "../../Components/CardDetailProject";
 import BgImageProjects from "../../assets/Text/BackgroundProjects.svg";
 import "./styles.css";
 
@@ -14,6 +15,7 @@ function Projects() {
             <span className="line-decoration--circle"></span>
             <span className="line-decoration--line"></span>
           </div>
+          <CardDetailProject/>
           <p className="projects__detail--text text-m text-center text-bold">
             Selecciona cualquier proyecto que quieras ver en detalle
           </p>
