@@ -14,16 +14,3 @@
   width: 100%;
   max-width: 42rem;
 }
-
-.projects__detail .line-decoration {
-  width: 70%;
-}
-
-.projects__detail--text {
-  padding: 1.8rem 0;
-  opacity: 0.5;
-}
-
-.line-decoration--right {
-  float: right;
-}
