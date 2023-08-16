@@ -1,6 +1,7 @@
 import React from "react";
 import DummieImage from "../../assets/Images/FotoPrueba.png";
 import IconGitHub from "../../assets/Icons/IconGithub.svg";
+import IconRightArrow from "../../assets/Icons/IconRightArrow.svg";
 import "./styles.css";
 
 const CardDetailProject = ({ name, type, year, repository, url, image }) => {
@@ -17,10 +18,19 @@ const CardDetailProject = ({ name, type, year, repository, url, image }) => {
           alt={name}
         />
         <div className="description__links">
-          <a className="text-m" href="https://github.com/">
+          <a
+            className="description__links__project text-m"
+            href="https://github.com/"
+          >
             Ver Proyecto
+            <span>
+              <img src={IconRightArrow} alt="" />
+            </span>
           </a>
-          <a className="link__repository" href="https://github.com/">
+          <a
+            className="description__links__repository"
+            href="https://github.com/"
+          >
             <img src={IconGitHub} alt="" />
           </a>
         </div>

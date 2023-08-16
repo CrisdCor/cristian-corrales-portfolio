@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   height: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +19,7 @@
   padding: 1.8rem 1.8rem;
   display: flex;
   gap: 1.8rem;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .projects-section__arrow--left {
