@@ -1,26 +1,36 @@
 import React from "react";
-import DummieImage from "../../assets/Images/FotoPrueba.png";
+import { useContext } from "react";
+import { ProjectContext } from "../../Context/ProjectContext.jsx";
 import IconGitHub from "../../assets/Icons/IconGithub.svg";
 import IconRightArrow from "../../assets/Icons/IconRightArrow.svg";
 import "./styles.css";
 
-const CardDetailProject = ({ name, type, year, repository, url, image }) => {
+const CardDetailProject = () => {
+  const context = useContext(ProjectContext);
+
   return (
     <div className="detail-project-section">
       <div className="line-decoration">
         <span className="line-decoration--circle"></span>
         <span className="line-decoration--line"></span>
       </div>
-      <article className="detail-project-section__card">
+      <article
+        className={`${
+          context.isProjectOpen === false
+            ? "detail-project-section__card--close"
+            : "detail-project-section__card"
+        }`}
+      >
         <img
           className="detail-project-section__card--image"
-          src={DummieImage}
-          alt={name}
+          src={context.projectToShow.image}
+          alt={context.projectToShow.name}
         />
         <div className="description__links">
           <a
             className="description__links__project text-m"
-            href="https://github.com/"
+            href={context.projectToShow.url}
+            target="_blank"
           >
             Ver Proyecto
             <span>
@@ -29,22 +39,35 @@ const CardDetailProject = ({ name, type, year, repository, url, image }) => {
           </a>
           <a
             className="description__links__repository"
-            href="https://github.com/"
+            href={context.projectToShow.repository}
+            target="_blank"
           >
             <img src={IconGitHub} alt="" />
           </a>
         </div>
         <div className="description__text">
-          <h2 className="text-lg text-center">ACADEMIA ALEXANDER</h2>
+          <h2 className="text-lg text-center">{context.projectToShow.name}</h2>
           <p className="text-m text-bold text-center">
-            TIPO: <span className="text-m text-regular">Aplicación web.</span>
+            TIPO:{" "}
+            <span className="text-m text-regular">
+              {context.projectToShow.type}
+            </span>
           </p>
           <p className="text-m text-bold text-center">
-            AÑO: <span className="text-m text-regular">2023</span>
+            AÑO:{" "}
+            <span className="text-m text-regular">
+              {context.projectToShow.year}
+            </span>
           </p>
         </div>
       </article>
-      <p className="detail-project-section--text text-m text-center text-bold">
+      <p
+        className={`${
+          context.isProjectOpen === false
+            ? "detail-project-section--text text-m text-center text-bold"
+            : "detail-project-section--text-close text-m text-center text-bold"
+        }`}
+      >
         Selecciona cualquier proyecto que quieras ver en detalle
       </p>
       <div className="line-decoration line-decoration--right">

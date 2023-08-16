@@ -1,6 +1,7 @@
 .detail-project-section {
   width: 100%;
   height: auto;
+  /* overflow: hidden; */
 }
 
 .detail-project-section .line-decoration {
@@ -22,6 +23,25 @@
   gap: 0.6rem;
   border-radius: 0.6rem;
   box-shadow: 0 0 8px rgba(147, 170, 194, 0.6);
+  animation: show-project 2s ease-in-out forwards;
+}
+
+@keyframes show-project {
+  from{
+    transform: translateY(200%);
+    opacity: 0;
+    display: none;  
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
+.detail-project-section__card--close{
+  transform: translateY(-200%);
+  opacity: 0;
 }
 
 .detail-project-section__card--image {
@@ -80,5 +100,21 @@
 .detail-project-section--text {
   padding: 1.8rem 0;
   opacity: 0.4;
-  display: none;
+}
+
+.detail-project-section--text-close {
+  padding: 1.8rem 0;
+  opacity: 0.4;
+  animation: close-text-project 1s ease-in-out forwards;
+}
+
+@keyframes close-text-project {
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-200%);
+  }
+  
 }
