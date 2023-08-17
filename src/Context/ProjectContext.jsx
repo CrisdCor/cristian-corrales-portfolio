@@ -21,7 +21,7 @@ export const ProjectProvider = ({ children }) => {
   const openProjectDetail = () => setIsProjectOpen(true);
   const closeProjectDetail = () => setIsProjectOpen(false);
 
-  const [projectToShow, setProjecTotShow]=useState({})
+  const [projectToShow, setProjectToShow] = useState([{}]);
 
   return (
     <ProjectContext.Provider
@@ -30,7 +30,7 @@ export const ProjectProvider = ({ children }) => {
         isProjectOpen,
         setIsProjectOpen,
         projectToShow,
-        setProjecTotShow,
+        setProjectToShow,
         openProjectDetail,
         closeProjectDetail
       }}
