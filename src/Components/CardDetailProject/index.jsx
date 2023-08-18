@@ -42,7 +42,7 @@ const CardDetailProject = () => {
             href={context.projectToShow.repository}
             target="_blank"
           >
-            <img src={IconGitHub} alt="" />
+            <img src={IconGitHub} alt="Icono de Github" />
           </a>
         </div>
         <div className="description__text">

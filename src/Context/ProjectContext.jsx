@@ -15,7 +15,17 @@ export const ProjectProvider = ({ children }) => {
       url: "https://crisdcor.github.io/curso-react-intro/",
       image: ImageFocalStudio,
     },
+    {
+      name: "Todo List",
+      description: "Empresa de fotografía",
+      type: "Aplicación web",
+      year: 2023,
+      repository: "https://github.com/CrisdCor/curso-shopi-project",
+      url: "https://crisdcor.github.io/curso-react-intro/",
+      image: ImageFocalStudio,
+    },
   ];
+
 
   const [isProjectOpen, setIsProjectOpen] = useState(false);
   const openProjectDetail = () => setIsProjectOpen(true);
