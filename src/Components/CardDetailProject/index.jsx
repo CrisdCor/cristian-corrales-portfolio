@@ -17,15 +17,17 @@ const CardDetailProject = () => {
       <article
         className={`${
           context.isProjectOpen === false
-            ? "detail-project-section__card--close"
+            ? "detail-project-section__card detail-project-section__card--close"
             : "detail-project-section__card"
         }`}
       >
-        <img
-          className="detail-project-section__card--image"
-          src={context.projectToShow.image}
-          alt={context.projectToShow.name}
-        />
+        <figure className="detail-project-section__card--image">
+          <img
+            src={context.projectToShow.image}
+            alt={context.projectToShow.name}
+          />
+        </figure>
+
         <div className="description__links">
           <a
             className="description__links__project text-m"
@@ -61,15 +63,15 @@ const CardDetailProject = () => {
           </p>
         </div>
       </article>
-      <p
+      {/* <p
         className={`${
           context.isProjectOpen === false
             ? "detail-project-section--text text-m text-center text-bold"
-            : "detail-project-section--text-close text-m text-center text-bold"
+            : "detail-project-section--text detail-project-section--text-close text-m text-center text-bold"
         }`}
       >
         Selecciona cualquier proyecto que quieras ver en detalle
-      </p>
+      </p> */}
       <div className="line-decoration line-decoration--right">
         <span className="line-decoration--line"></span>
         <span className="line-decoration--circle"></span>
