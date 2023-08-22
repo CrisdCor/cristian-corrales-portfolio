@@ -21,46 +21,52 @@ const CardDetailProject = () => {
             : "detail-project-section__card"
         }`}
       >
-        <figure className="detail-project-section__card--image">
-          <img
-            src={context.projectToShow.image}
-            alt={context.projectToShow.name}
-          />
-        </figure>
-
-        <div className="description__links">
-          <a
-            className="description__links__project text-m"
-            href={context.projectToShow.url}
-            target="_blank"
-          >
-            Ver Proyecto
-            <span>
-              <img src={IconRightArrow} alt="" />
-            </span>
-          </a>
-          <a
-            className="description__links__repository"
-            href={context.projectToShow.repository}
-            target="_blank"
-          >
-            <img src={IconGitHub} alt="Icono de Github" />
-          </a>
+        <div className="detail-project-section__project">
+          <figure className="project__card-image">
+            <img
+              src={context.projectToShow.image}
+              alt={context.projectToShow.name}
+            />
+          </figure>
+          <div className="project__card-links">
+            <a
+              className="card-links__project text-m"
+              href={context.projectToShow.url}
+              target="_blank"
+            >
+              Ver Proyecto
+              <span>
+                <img src={IconRightArrow} alt="" />
+              </span>
+            </a>
+            <a
+              className="card-links__repository"
+              href={context.projectToShow.repository}
+              target="_blank"
+            >
+              <img src={IconGitHub} alt="Icono de Github" />
+            </a>
+          </div>
         </div>
-        <div className="description__text">
-          <h2 className="text-lg text-center">{context.projectToShow.name}</h2>
-          <p className="text-m text-bold text-center">
-            TIPO:{" "}
-            <span className="text-m text-regular">
-              {context.projectToShow.type}
-            </span>
-          </p>
-          <p className="text-m text-bold text-center">
-            AÑO:{" "}
-            <span className="text-m text-regular">
-              {context.projectToShow.year}
-            </span>
-          </p>
+        <div className="detail-project-section__card-text">
+          <h2 className="card-text__title text-lg text-center">
+            {context.projectToShow.name}
+          </h2>
+          <p className="card-text__description"></p>
+          <div className="card-text__details">
+            <p className="text-m text-bold text-center">
+              TIPO:{" "}
+              <span className="text-m text-regular">
+                {context.projectToShow.type}
+              </span>
+            </p>
+            <p className="text-m text-bold text-center">
+              AÑO:{" "}
+              <span className="text-m text-regular">
+                {context.projectToShow.year}
+              </span>
+            </p>
+          </div>
         </div>
       </article>
       {/* <p
@@ -72,7 +78,7 @@ const CardDetailProject = () => {
       >
         Selecciona cualquier proyecto que quieras ver en detalle
       </p> */}
-      <div className="line-decoration line-decoration--right">
+      <div className="line-decoration">
         <span className="line-decoration--line"></span>
         <span className="line-decoration--circle"></span>
         <span className="line-decoration--circle"></span>
