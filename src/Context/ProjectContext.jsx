@@ -8,7 +8,7 @@ export const ProjectProvider = ({ children }) => {
   const getProjectsData = () => [
     {
       name: "Focal Studio",
-      description: "Empresa de fotografía",
+      description: "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
       type: "Aplicación web",
       year: 2023,
       repository: "https://github.com/CrisdCor/curso-shopi-project",

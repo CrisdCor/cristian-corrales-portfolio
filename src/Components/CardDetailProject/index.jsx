@@ -30,14 +30,12 @@ const CardDetailProject = () => {
           </figure>
           <div className="project__card-links">
             <a
-              className="card-links__project text-m"
+              className="card-links__project"
               href={context.projectToShow.url}
               target="_blank"
             >
-              Ver Proyecto
-              <span>
-                <img src={IconRightArrow} alt="" />
-              </span>
+              <span className="text-m">Ver Proyecto</span>
+              <img src={IconRightArrow} alt="" />
             </a>
             <a
               className="card-links__repository"
@@ -52,7 +50,7 @@ const CardDetailProject = () => {
           <h2 className="card-text__title text-lg text-center">
             {context.projectToShow.name}
           </h2>
-          <p className="card-text__description"></p>
+          <p className="card-text__description text-m text-center">{context.projectToShow.description}</p>
           <div className="card-text__details">
             <p className="text-m text-bold text-center">
               TIPO:{" "}
@@ -78,7 +76,7 @@ const CardDetailProject = () => {
       >
         Selecciona cualquier proyecto que quieras ver en detalle
       </p> */}
-      <div className="line-decoration">
+      <div className="line-decoration line-decoration--open">
         <span className="line-decoration--line"></span>
         <span className="line-decoration--circle"></span>
         <span className="line-decoration--circle"></span>
