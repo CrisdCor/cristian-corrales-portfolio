@@ -8,19 +8,22 @@ import "./styles.css";
 const CardDetailProject = () => {
   const context = useContext(ProjectContext);
 
+  const isClosed = context.isProjectOpen === false;
+  const cardClassName = isClosed
+    ? "detail-project-section__card detail-project-section__card--close"
+    : "detail-project-section__card";
+
+  const lineDecorationClassName = isClosed
+    ? "line-decoration"
+    : "line-decoration line-decoration--open";
+
   return (
     <div className="detail-project-section">
       <div className="line-decoration">
         <span className="line-decoration--circle"></span>
         <span className="line-decoration--line"></span>
       </div>
-      <article
-        className={`${
-          context.isProjectOpen === false
-            ? "detail-project-section__card detail-project-section__card--close"
-            : "detail-project-section__card"
-        }`}
-      >
+      <article className={cardClassName}>
         <div className="detail-project-section__project">
           <figure className="project__card-image">
             <img
@@ -50,7 +53,9 @@ const CardDetailProject = () => {
           <h2 className="card-text__title text-lg text-center">
             {context.projectToShow.name}
           </h2>
-          <p className="card-text__description text-m text-center">{context.projectToShow.description}</p>
+          <p className="card-text__description text-m text-center">
+            {context.projectToShow.description}
+          </p>
           <div className="card-text__details">
             <p className="text-m text-bold text-center">
               TIPO:{" "}
@@ -67,6 +72,11 @@ const CardDetailProject = () => {
           </div>
         </div>
       </article>
+      <div className={lineDecorationClassName}>
+        <span className="line-decoration--line"></span>
+        <span className="line-decoration--circle"></span>
+        <span className="line-decoration--circle"></span>
+      </div>
       {/* <p
         className={`${
           context.isProjectOpen === false
@@ -76,11 +86,6 @@ const CardDetailProject = () => {
       >
         Selecciona cualquier proyecto que quieras ver en detalle
       </p> */}
-      <div className="line-decoration line-decoration--open">
-        <span className="line-decoration--line"></span>
-        <span className="line-decoration--circle"></span>
-        <span className="line-decoration--circle"></span>
-      </div>
     </div>
   );
 };
