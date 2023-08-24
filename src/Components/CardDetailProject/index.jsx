@@ -9,13 +9,10 @@ const CardDetailProject = () => {
   const context = useContext(ProjectContext);
 
   const isClosed = context.isProjectOpen === false;
-  const cardClassName = isClosed
-    ? "detail-project-section__card detail-project-section__card--close"
-    : "detail-project-section__card";
 
-  const lineDecorationClassName = isClosed
-    ? "line-decoration"
-    : "line-decoration line-decoration--open";
+  const cardClassName = isClosed
+    ? "detail-project-section__card--close"
+    : "detail-project-section__card--open";
 
   return (
     <div className="detail-project-section">
@@ -72,20 +69,11 @@ const CardDetailProject = () => {
           </div>
         </div>
       </article>
-      <div className={lineDecorationClassName}>
+      <div className="line-decoration">
         <span className="line-decoration--line"></span>
         <span className="line-decoration--circle"></span>
         <span className="line-decoration--circle"></span>
       </div>
-      {/* <p
-        className={`${
-          context.isProjectOpen === false
-            ? "detail-project-section--text text-m text-center text-bold"
-            : "detail-project-section--text detail-project-section--text-close text-m text-center text-bold"
-        }`}
-      >
-        Selecciona cualquier proyecto que quieras ver en detalle
-      </p> */}
     </div>
   );
 };
