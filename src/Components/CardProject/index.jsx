@@ -8,7 +8,10 @@ const CardProject = ({ name, image, type, year, url, description, repository }) 
 
   const showProject = (project) => {
     context.setProjectToShow(project);
-    context.openProjectDetail();
+    context.closeProjectDetail();
+    setTimeout(()=>{
+      context.openProjectDetail();
+    },500);
   };
 
   return (

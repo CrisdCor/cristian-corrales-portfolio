@@ -17,7 +17,7 @@ export const ProjectProvider = ({ children }) => {
     },
     {
       name: "Todo List",
-      description: "Empresa de fotografía",
+      description: "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
       type: "Aplicación web",
       year: 2023,
       repository: "https://github.com/CrisdCor/curso-shopi-project",
@@ -25,7 +25,6 @@ export const ProjectProvider = ({ children }) => {
       image: ImageFocalStudio,
     },
   ];
-
 
   const [isProjectOpen, setIsProjectOpen] = useState(false);
   const openProjectDetail = () => setIsProjectOpen(true);

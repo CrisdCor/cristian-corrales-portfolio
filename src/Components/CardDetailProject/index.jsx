@@ -11,8 +11,8 @@ const CardDetailProject = () => {
   const isClosed = context.isProjectOpen === false;
 
   const cardClassName = isClosed
-    ? "detail-project-section__card--close"
-    : "detail-project-section__card--open";
+     ? "animation-card--close"
+     : "animation-card--open";
 
   return (
     <div className="detail-project-section">
@@ -20,7 +20,7 @@ const CardDetailProject = () => {
         <span className="line-decoration--circle"></span>
         <span className="line-decoration--line"></span>
       </div>
-      <article className={cardClassName}>
+      <article className={`detail-project-section__card ${cardClassName}`}>
         <div className="detail-project-section__project">
           <figure className="project__card-image">
             <img
