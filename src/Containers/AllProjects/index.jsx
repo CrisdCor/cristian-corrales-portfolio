@@ -8,11 +8,7 @@ const AllProjects = () => {
   const projectsData = getProjectsData;
 
   return (
-    <section className="projects-section">
-      <figure className="projects-section__arrow projects-section__arrow--left">
-        <img src="" alt="" />
-      </figure>
-      <div className="projects-section__wrap">
+      <section className="projects-section">
         {projectsData().map((project, index) => (
           <CardProject
             key={index}
@@ -25,11 +21,7 @@ const AllProjects = () => {
             image={project.image}
           />
         ))}
-      </div>
-      <figure className="projects-section__arrow projects-section__arrow--right">
-        <img src="" alt="" />
-      </figure>
-    </section>
+      </section>
   );
 };
 

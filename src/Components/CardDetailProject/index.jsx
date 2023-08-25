@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ProjectContext } from "../../Context/ProjectContext.jsx";
 import IconGitHub from "../../assets/Icons/IconGithub.svg";
 import IconRightArrow from "../../assets/Icons/IconRightArrow.svg";
@@ -9,10 +8,9 @@ const CardDetailProject = () => {
   const context = useContext(ProjectContext);
 
   const isClosed = context.isProjectOpen === false;
-
   const cardClassName = isClosed
-     ? "animation-card--close"
-     : "animation-card--open";
+    ? "animation-card--close"
+    : "animation-card--open";
 
   return (
     <div className="detail-project-section">

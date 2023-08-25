@@ -8,7 +8,8 @@ export const ProjectProvider = ({ children }) => {
   const getProjectsData = () => [
     {
       name: "Focal Studio",
-      description: "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
+      description:
+        "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
       type: "Aplicación web",
       year: 2023,
       repository: "https://github.com/CrisdCor/curso-shopi-project",
@@ -17,7 +18,8 @@ export const ProjectProvider = ({ children }) => {
     },
     {
       name: "Todo List",
-      description: "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
+      description:
+        "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
       type: "Aplicación web",
       year: 2023,
       repository: "https://github.com/CrisdCor/curso-shopi-project",
@@ -41,7 +43,7 @@ export const ProjectProvider = ({ children }) => {
         projectToShow,
         setProjectToShow,
         openProjectDetail,
-        closeProjectDetail
+        closeProjectDetail,
       }}
     >
       {children}
@@ -49,6 +51,6 @@ export const ProjectProvider = ({ children }) => {
   );
 };
 
-export const useProjectContext = () => {
-  return useContext(ProjectContext);
-};
+ export const useProjectContext = () => {
+   return useContext(ProjectContext);
+ };

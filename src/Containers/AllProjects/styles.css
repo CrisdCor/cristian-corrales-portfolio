@@ -1,31 +1,20 @@
 .projects-section {
-  position: relative;
-  width: 100%;
+  /* width: 100%;
   height: auto;
+
+  padding: .8rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.projects-section__arrow {
-  position: absolute;
-  width: 3.6rem;
-  height: 100%;
-}
-
-.projects-section__wrap {
+  gap: 0.8rem;
+  overflow-x: scroll; */
   width: 100%;
-  padding: 1.8rem 1.8rem;
-  display: flex;
-  gap: 1.8rem;
-  overflow-x: scroll;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 0.8rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
 }
 
-.projects-section__arrow--left {
-  left: 0;
-}
-
-.projects-section__arrow--right {
-  right: 0;
-}
