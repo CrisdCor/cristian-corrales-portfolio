@@ -1,9 +1,11 @@
 .detail-project-section {
+  z-index: 1;
   width: 100%;
   min-height: 42rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .detail-project-section__card {
@@ -31,7 +33,6 @@
   }
   100% {
     transform: scale(2);
-
     filter: blur(4px);
     opacity: 0;
   }
@@ -72,6 +73,7 @@
 .project__card-image img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .project__card-links {

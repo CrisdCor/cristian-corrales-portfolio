@@ -26,6 +26,16 @@ export const ProjectProvider = ({ children }) => {
       url: "https://crisdcor.github.io/curso-react-intro/",
       image: ImageFocalStudio,
     },
+    {
+      name: "Academia Alexander",
+      description:
+        "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
+      type: "Aplicación web",
+      year: 2023,
+      repository: "https://github.com/CrisdCor/curso-shopi-project",
+      url: "https://crisdcor.github.io/curso-react-intro/",
+      image: ImageFocalStudio,
+    },
   ];
 
   const [isProjectOpen, setIsProjectOpen] = useState(false);
@@ -51,6 +61,6 @@ export const ProjectProvider = ({ children }) => {
   );
 };
 
- export const useProjectContext = () => {
-   return useContext(ProjectContext);
- };
+export const useProjectContext = () => {
+  return useContext(ProjectContext);
+};

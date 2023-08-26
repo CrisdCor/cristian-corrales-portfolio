@@ -67,11 +67,6 @@ const CardDetailProject = () => {
           </div>
         </div>
       </article>
-      <div className="line-decoration">
-        <span className="line-decoration--line"></span>
-        <span className="line-decoration--circle"></span>
-        <span className="line-decoration--circle"></span>
-      </div>
     </div>
   );
 };

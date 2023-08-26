@@ -26,15 +26,21 @@ const CardProject = ({
     <article
       className="card-project"
       onClick={() =>
-        showProject({ name, image, url, type, year, description, repository })
+        showProject({
+          name,
+          image,
+          url,
+          type,
+          year,
+          description,
+          repository,
+        })
       }
     >
-      <figure className="card-project__image">
-        <img src={image} alt={name} />
-      </figure>
       <div className="card-project__text">
         <p className="text-l text-center text-regular">{name}</p>
       </div>
+      <img className="card-project__image" src={image} alt={name} />
     </article>
   );
 };

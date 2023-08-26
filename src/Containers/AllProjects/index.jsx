@@ -8,20 +8,20 @@ const AllProjects = () => {
   const projectsData = getProjectsData;
 
   return (
-      <section className="projects-section">
-        {projectsData().map((project, index) => (
-          <CardProject
-            key={index}
-            name={project.name}
-            description={project.description}
-            type={project.type}
-            year={project.year}
-            repository={project.repository}
-            url={project.url}
-            image={project.image}
-          />
-        ))}
-      </section>
+    <section className="projects-section">
+      {projectsData().map((project, index) => (
+        <CardProject
+          key={index}
+          name={project.name}
+          description={project.description}
+          type={project.type}
+          year={project.year}
+          repository={project.repository}
+          url={project.url}
+          image={project.image}
+        />
+      ))}
+    </section>
   );
 };
 

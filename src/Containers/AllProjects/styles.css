@@ -1,18 +1,26 @@
 .projects-section {
-  /* width: 100%;
-  height: auto;
-  padding: .8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  overflow-x: scroll; */
+  z-index: 5;
   width: 100%;
-  grid-auto-flow: column;
-  scroll-behavior: auto;
-  gap: 0.8rem;
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
+  height: auto;
+  /* min-height: 18.3rem; */
+  padding: 1.8rem 0;
+  display: flex;
+  gap: 1.2rem;
+  /* overflow-x: scroll; */
+  /* scroll-snap-type: x mandatory; */
 }
 
+.projects-section::-webkit-scrollbar {
+  height: 0.9rem;
+}
+
+.projects-section::-webkit-scrollbar-thumb {
+  background: rgba(147, 170, 194, 0.15);
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    scrollbar-width: none;
+  }
+}
