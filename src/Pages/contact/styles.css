@@ -1,7 +1,18 @@
 .contact {
+  position: relative;
   width: 100%;
   max-width: 128rem;
   height: 100vh;
   margin: 0 auto;
   padding: 8rem 1.8rem 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact--image {
+  position: absolute;
+  top: 6rem;
+  left: 1.8rem;
+  width: 6rem;
 }

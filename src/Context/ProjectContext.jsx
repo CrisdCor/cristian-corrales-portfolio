@@ -1,40 +1,31 @@
 import React from "react";
 import { createContext, useContext, useState } from "react";
-import ImageFocalStudio from "../assets/Images/FotoPrueba.png";
+import ImageFocalStudio from "../assets/Images/TodoListImage.jpeg";
+import PlayerMockupImage from "../assets/Images/PlayerMockupImage.jpeg";
 
 export const ProjectContext = createContext();
 
 export const ProjectProvider = ({ children }) => {
   const getProjectsData = () => [
     {
-      name: "Focal Studio",
-      description:
-        "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-shopi-project",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
-    },
-    {
       name: "Todo List",
       description:
-        "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
+        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
       type: "Aplicación web",
       year: 2023,
-      repository: "https://github.com/CrisdCor/curso-shopi-project",
+      repository: "https://github.com/CrisdCor/curso-react-intro.git",
       url: "https://crisdcor.github.io/curso-react-intro/",
       image: ImageFocalStudio,
     },
     {
-      name: "Academia Alexander",
+      name: "Mockup Player",
       description:
-        "Este proyecto pertenece a una empresa de fotografía en el cual se muestran sus clientes y servicios que presta",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-shopi-project",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
+        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
+      type: "Prototipo",
+      year: 2022,
+      repository: "",
+      url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
+      image: PlayerMockupImage,
     },
   ];
 

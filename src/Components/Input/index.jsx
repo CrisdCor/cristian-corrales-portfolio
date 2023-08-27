@@ -5,7 +5,7 @@ const Input = () => {
     <input
       className="inputs text-m"
       type="email"
-      placeholder="Escribe tu email"
+      placeholder="Correo electrónico"
     />
   );
 };

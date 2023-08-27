@@ -1,0 +1,52 @@
+.detail-project-section {
+  z-index: 1;
+  width: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.detail-project-section__card {
+  width: 100%;
+  max-width: 68rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.animation-card--close {
+  animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+@keyframes puff-out-center {
+  0% {
+    transform: scale(1);
+
+    filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+}
+
+.animation-card--open {
+  animation: card-detail-animation 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes card-detail-animation {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

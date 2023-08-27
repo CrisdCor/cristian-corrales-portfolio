@@ -7,7 +7,7 @@ const FormContact = () => {
   return (
     <section className="form-contact">
       <p className="text-m text-center">
-        Si lo prefieres, también puedes hacerlo diligenciando el siguiente
+        Si lo prefieres, también puedes contactarme diligenciando el siguiente
         formulario.
       </p>
       <form className="form-contact__form" action="">

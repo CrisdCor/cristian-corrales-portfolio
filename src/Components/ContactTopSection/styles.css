@@ -3,11 +3,14 @@
 .contact__social-networks {
   position: relative;
   width: 100%;
-  height: 40%;
+  max-width: 62rem;
+  padding: 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.8rem;
+  flex-basis: 33.9rem;
+  flex-grow: 2;
 }
 
 .contact__social-networks--image {

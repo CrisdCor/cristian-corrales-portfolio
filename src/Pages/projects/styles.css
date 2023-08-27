@@ -1,16 +1,15 @@
 .projects {
   width: 100%;
   max-width: 128rem;
-  height: 100vh;
   margin: 0 auto;
-  padding: 8rem 1.8rem 1.8rem;
+  padding: 6.2rem 1.8rem 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.8rem;
+  gap: 0.9rem;
 }
 
 .projects__title {
   width: 100%;
-  max-width: 42rem;
+  max-width: 92rem;
 }

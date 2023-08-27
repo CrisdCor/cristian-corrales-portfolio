@@ -1,16 +1,15 @@
 .textarea {
   width: 100%;
-  min-width: 28.4rem;
-  max-width: 36rem;
+  max-width: 33.9rem;
   height: 16.2rem;
-  min-height: 16.2rem;
-  max-height: 16.2rem;
   padding: 0.9rem;
   font-family: "Exo 2", sans-serif;
   color: var(--soft-blue);
-  border: 1px solid var(--soft-blue);
   border-radius: 0.4rem;
+  border: 0.1rem solid rgba(147, 170, 194, 0.4);
   background: transparent;
+  resize: none;
+  transition: box-shadow 0.6s;
 }
 
 .textarea::placeholder {
@@ -19,5 +18,7 @@
 }
 
 .textarea:focus {
-  outline: 0.1rem solid var(--cyan);
+  box-shadow: 0 0 0.6rem rgba(0, 255, 233, 0.4);
+  outline: none;
+  transition: box-shadow 0.4s;
 }

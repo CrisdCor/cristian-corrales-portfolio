@@ -37,10 +37,12 @@ const CardProject = ({
         })
       }
     >
+      <picture className="card-project__image">
+        <img src={image} alt={name} />
+      </picture>
       <div className="card-project__text">
-        <p className="text-l text-center text-regular">{name}</p>
+        <p className="text-m text-center text-regular">{name}</p>
       </div>
-      <img className="card-project__image" src={image} alt={name} />
     </article>
   );
 };

@@ -7,7 +7,7 @@ const TextArea = () => {
       id=""
       placeholder="Mensaje"
       name=""
-      maxLength="255"
+      maxLength="250"
     ></textarea>
   );
 };
