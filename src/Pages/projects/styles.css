@@ -4,14 +4,12 @@
   max-width: 128rem;
   margin: 0 auto;
   padding: 6.2rem 1.8rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.9rem;
 }
 
-.projects__title{
+.projects__title {
+  z-index: 1;
   position: absolute;
+  top: 6.2rem;
   left: 0;
   height: calc(100vh - 6.2rem);
 }
