@@ -16,10 +16,7 @@ const CardProject = ({
 
   const showProject = (project) => {
     context.setProjectToShow(project);
-    context.closeProjectDetail();
-    setTimeout(() => {
-      context.openProjectDetail();
-    }, 300);
+    context.openProjectDetail();
   };
 
   return (
@@ -41,7 +38,9 @@ const CardProject = ({
         <img src={image} alt={name} />
       </picture>
       <div className="card-project__text">
-        <p className="card-project__text--name text-m text-center text-regular">{name}</p>
+        <p className="card-project__text--name text-m text-center text-regular">
+          {name}
+        </p>
         <hr className="card-project__text--division" />
         <p className="card-project__text--type text-m text-center">{type}</p>
       </div>
