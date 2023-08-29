@@ -10,7 +10,7 @@ function Projects() {
       <main className="projects">
         <img className="projects__title" src={BgImageProjects} alt="" />
         <AllProjects />
-        {/* <CardDetailProject></CardDetailProject> */}
+        <CardDetailProject />
       </main>
     </Layout>
   );

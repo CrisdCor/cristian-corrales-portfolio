@@ -8,7 +8,7 @@ export const ProjectContext = createContext();
 export const ProjectProvider = ({ children }) => {
   const getProjectsData = () => [
     {
-      name: "Todo List",
+      name: "Academia Alexander",
       description:
         "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
       type: "Aplicación web",

@@ -41,7 +41,9 @@ const CardProject = ({
         <img src={image} alt={name} />
       </picture>
       <div className="card-project__text">
-        <p className="text-m text-center text-regular">{name}</p>
+        <p className="card-project__text--name text-m text-center text-regular">{name}</p>
+        <hr className="card-project__text--division" />
+        <p className="card-project__text--type text-m text-center">{type}</p>
       </div>
     </article>
   );

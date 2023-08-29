@@ -7,7 +7,7 @@ const DetailProjectInteraction = () => {
   const context = useContext(ProjectContext);
 
   return (
-    <div className="card__element card__element--interaction">
+    <div className="card__element--interaction">
       <figure className="interaction__image">
         <img
           src={context.projectToShow.image}

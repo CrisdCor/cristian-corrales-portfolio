@@ -5,6 +5,5 @@
   margin: 3.6rem auto 0 auto;
   display: grid;
   gap: 0.9rem;
-  grid-auto-rows: 36rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 28rem), 1fr));
 }

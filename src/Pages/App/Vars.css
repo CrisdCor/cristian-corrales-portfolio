@@ -1,7 +1,12 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --dark-blue: #0a0b23;
+  --dark-blue: rgb(10, 11, 35);
   --soft-blue: #93aac2;
   --cyan: #00ffe9;
+  /*Vars Borders*/
+  --white-border:rgba(147, 170, 194, 0.2);
+
+  /*Transparent*/
+  --dark-blue-tr:rgba(10, 11, 35, 0.9);
 }

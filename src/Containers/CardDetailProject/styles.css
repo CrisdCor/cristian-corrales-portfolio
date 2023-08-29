@@ -1,19 +1,38 @@
 .detail-project-section {
   z-index: 1;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 0.4rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .detail-project-section__card {
+  box-sizing: border-box;
+  position: fixed;
+  top: 18rem;
   width: 100%;
-  max-width: 68rem;
-  margin: 0 auto;
+  min-width: 28rem;
+  max-width: 36rem;
+  height: 46rem;
+  /* margin: auto; */
+  padding: 0.4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 0.8rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid rgba(147, 170, 194, 0.4);
+  background: var(--dark-blue-tr);
+}
+
+
+.detail-project-section__close-wrap img{
+  width: 50%;
 }
 
 .animation-card--close {

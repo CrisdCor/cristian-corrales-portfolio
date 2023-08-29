@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ProjectContext } from "../../Context/ProjectContext.jsx";
 import DetailProjectInteraction from "../../Components/DetailProjectInteraction";
 import DetailProjectDescription from "../../Components/DetailProjectDescription";
+import IconClose from "../../assets/Icons/IconClose.svg"
 import "./styles.css";
 
 const CardDetailProject = () => {
@@ -13,12 +14,12 @@ const CardDetailProject = () => {
     : "animation-card--open";
 
   return (
-    <div className="detail-project-section">
+    // <div className="detail-project-section">
       <article className={`detail-project-section__card ${cardClassName}`}>
         <DetailProjectInteraction />
         <DetailProjectDescription />
       </article>
-    </div>
+    // </div>
   );
 };
 
