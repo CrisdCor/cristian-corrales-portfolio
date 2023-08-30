@@ -10,7 +10,6 @@ const MyHeader = () => {
       <div className="header__container">
         <ButtonMenu />
         <HeaderLogo />
-        <div className="header-circle-decoration"></div>
       </div>
     </header>
   );

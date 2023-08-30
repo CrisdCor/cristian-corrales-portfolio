@@ -9,8 +9,10 @@ function Contact() {
     <Layout>
       <main className="contact">
         <img className="contact--image" src={BgImageContact} alt="Contacto" />
-        <ContactTopSection />
-        <FormContact />
+        <div className="contact-wrap">
+          <FormContact />
+          <ContactTopSection />
+        </div>
       </main>
     </Layout>
   );
