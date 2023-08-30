@@ -4,6 +4,7 @@ import NameBackgorund from "../../assets/Text/HomeName.svg";
 import "./styles.css";
 
 function Home() {
+
   return (
     <Layout>
       <div className="home-wrap">

@@ -7,6 +7,7 @@
   height: 100vh;
   backdrop-filter: blur(10px);
   transition: backdrop-filter 1.2s;
+  overflow: hidden;
 }
 
 .detail-project-section {
@@ -72,7 +73,7 @@
 }
 
 .animation-card--open {
-  animation: card-detail-animation 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: card-detail-animation 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 @keyframes card-detail-animation {

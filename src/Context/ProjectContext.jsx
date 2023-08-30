@@ -8,29 +8,9 @@ export const ProjectContext = createContext();
 export const ProjectProvider = ({ children }) => {
   const getProjectsData = () => [
     {
-      name: "Academia Alexander",
-      description:
-        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-react-intro.git",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
-    },
-    {
-      name: "Mockup Player",
-      description:
-        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
-      type: "Prototipo",
-      year: 2022,
-      repository: "",
-      url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
-      image: PlayerMockupImage,
-    },
-    {
       name: "Todo List",
       description:
-        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
+        "Proyecto académico hecho con React, es un MBP que tenía como objetivo aplicar los conocimientos adquiridos a través de los distintos cursos realizados. Se espera pronto realizar un upgrade de la UI del producto.",
       type: "Aplicación web",
       year: 2023,
       repository: "https://github.com/CrisdCor/curso-react-intro.git",
@@ -38,92 +18,12 @@ export const ProjectProvider = ({ children }) => {
       image: ImageFocalStudio,
     },
     {
-      name: "Mockup Player",
+      name: "Diseño de Reproductor",
       description:
-        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
+        "Diseño de un reproductor de música para móvil, en este proyecto se trató de aplicar algo de la tendencia del Neomorfismo.",
       type: "Prototipo",
       year: 2022,
-      repository: "",
-      url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
-      image: PlayerMockupImage,
-    },
-    {
-      name: "Todo List",
-      description:
-        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-react-intro.git",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
-    },
-    {
-      name: "Mockup Player",
-      description:
-        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
-      type: "Prototipo",
-      year: 2022,
-      repository: "",
-      url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
-      image: PlayerMockupImage,
-    },
-    {
-      name: "Todo List",
-      description:
-        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-react-intro.git",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
-    },
-    {
-      name: "Mockup Player",
-      description:
-        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
-      type: "Prototipo",
-      year: 2022,
-      repository: "",
-      url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
-      image: PlayerMockupImage,
-    },
-    {
-      name: "Todo List",
-      description:
-        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-react-intro.git",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
-    },
-    {
-      name: "Mockup Player",
-      description:
-        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
-      type: "Prototipo",
-      year: 2022,
-      repository: "",
-      url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
-      image: PlayerMockupImage,
-    },
-    {
-      name: "Todo List",
-      description:
-        "Proyecto académico que se realizó utilizando React. En este se buscó aplicar los conocimientos adquiridos a lo largo del curso.",
-      type: "Aplicación web",
-      year: 2023,
-      repository: "https://github.com/CrisdCor/curso-react-intro.git",
-      url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
-    },
-    {
-      name: "Mockup Player",
-      description:
-        "Diseño en Figma de un reproductor de música con insipiración en una tendencia Neomorfista.",
-      type: "Prototipo",
-      year: 2022,
-      repository: "",
+      repository: "https://www.behance.net/gallery/168513077/Reproductor",
       url: "https://www.figma.com/file/tPPvuN0T558dbYoJ7f3dXR/ReproductorProject?type=design&node-id=0%3A1&mode=design&t=hexgdbqjMgOe5hlb-1",
       image: PlayerMockupImage,
     },
