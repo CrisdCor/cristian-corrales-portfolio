@@ -1,13 +1,13 @@
-@import url("../../Pages/App/Vars.css");
+/* @import url("../../Pages/App/Vars.css"); */
 
 .form-contact {
   width: 100%;
+  max-width: 34rem;
   margin: 0 auto;
+  justify-self: flex-end;
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
-  flex-basis: 33.9rem;
-  flex-grow: 1;
 }
 
 .form-contact__form {

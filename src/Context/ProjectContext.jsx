@@ -1,6 +1,6 @@
 import React from "react";
 import { createContext, useContext, useState } from "react";
-import ImageFocalStudio from "../assets/Images/TodoListImage.jpeg";
+import ImageTodoList from "../assets/Images/TodoListImage.png";
 import PlayerMockupImage from "../assets/Images/PlayerMockupImage.jpeg";
 
 export const ProjectContext = createContext();
@@ -15,7 +15,7 @@ export const ProjectProvider = ({ children }) => {
       year: 2023,
       repository: "https://github.com/CrisdCor/curso-react-intro.git",
       url: "https://crisdcor.github.io/curso-react-intro/",
-      image: ImageFocalStudio,
+      image: ImageTodoList,
     },
     {
       name: "Diseño de Reproductor",

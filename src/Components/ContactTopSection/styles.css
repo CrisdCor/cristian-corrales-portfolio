@@ -4,10 +4,10 @@
   position: relative;
   width: 100%;
   max-width: 62rem;
-  padding: 1.8rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.8rem;
   flex-basis: 33.9rem;
   flex-grow: 2;
