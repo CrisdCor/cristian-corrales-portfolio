@@ -8,10 +8,10 @@ function Contact() {
   return (
     <Layout>
       <main className="contact">
-        <img className="contact--image" src={BgImageContact} alt="Contacto" />
+      <img className="contact--image" src={BgImageContact} alt="Contacto" />
         <div className="contact-wrap">
-          <ContactTopSection />
           <FormContact />
+          <ContactTopSection />
         </div>
       </main>
     </Layout>

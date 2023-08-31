@@ -1,23 +1,14 @@
 @import url("../../Pages/App/Vars.css");
 
-.contact__social-networks {
-  position: relative;
+.contact__info {
   width: 100%;
-  max-width: 62rem;
-
+  max-width: 42rem;
+  padding: 0 1.8rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 1.8rem;
-  flex-basis: 33.9rem;
-  flex-grow: 2;
-}
-
-.contact__social-networks--image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 36.2rem;
 }
 
 .contact__social-networks--email {

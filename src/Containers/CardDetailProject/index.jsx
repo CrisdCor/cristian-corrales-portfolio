@@ -22,7 +22,7 @@ const CardDetailProject = () => {
     <div className={`detail-project-section-wrap ${cardClassName}`}>
       <article className={`detail-project-section ${cardClassName}`}>
         <div
-          className="detail-project-section__close-button text-center text-m"
+          className="detail-project-section__close-button text-center text-m text-regular"
           onClick={closeProject}
         >
           Cerrar

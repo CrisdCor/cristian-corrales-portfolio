@@ -12,6 +12,7 @@
 }
 
 .contact--image {
+  z-index: 1;
   position: absolute;
   left: 0;
   height: calc(100vh - 9.8rem);
@@ -19,7 +20,10 @@
 
 .contact-wrap {
   width: 100%;
+  max-width: 92rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.8rem;
+  overflow: hidden;
 }
