@@ -3,7 +3,6 @@ import ContactTopSection from "../../Components/ContactTopSection";
 import FormContact from "../../Containers/FormContact";
 import EllipseDecoration from "../../Components/EllipseDecoration";
 import BgImageContact from "../../assets/Text/BackgroundContact.svg";
-
 import "./styles.css";
 
 function Contact() {

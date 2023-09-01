@@ -1,7 +1,7 @@
 import "./styles.css";
 
-const Button = () => {
-  return <button className="button text-l">Enviar Mensaje</button>;
+const Button = ({ textButton }) => {
+  return <button className="button text-l">{textButton}</button>;
 };
 
 export default Button;

@@ -1,11 +1,11 @@
 import "./styles.css";
 
-const Input = () => {
+const Input = ({textPlaceHolder}) => {
   return (
     <input
       className="inputs text-m"
       type="email"
-      placeholder="Correo electrónico"
+      placeholder={textPlaceHolder}
     />
   );
 };

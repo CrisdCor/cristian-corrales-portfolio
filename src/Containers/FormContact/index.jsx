@@ -13,9 +13,10 @@ const FormContact = () => {
         No dudes en hacerlo. Te estaré dando respuesta lo más pronto posible.
       </p>
       <form className="form-contact__form" action="">
-        <Input />
-        <TextArea />
-        <Button />
+        <Input textPlaceHolder="Correo electrónico" />
+        <Input textPlaceHolder="Nombre" />
+        <TextArea textPlaceHolder="Mensaje" />
+        <Button textButton="Enviar Mensaje" />
       </form>
     </section>
   );
