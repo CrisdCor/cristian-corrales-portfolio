@@ -1,9 +1,8 @@
-@import url(../../Pages/App/Vars.css);
-
 .button-menu {
   position: relative;
-  height: 100%;
   width: 4.3rem;
+  height: 100%;
+  max-height: 3.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,7 @@
 .button-menu__text {
   position: absolute;
   text-align: center;
+  color: var(--cyan);
   transform: scale(1.2);
   transform-origin: bottom;
   transition: 1s;
