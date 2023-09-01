@@ -1,0 +1,12 @@
+.ellipse-decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 46rem;
+  height: 46rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(147, 170, 194, 0.1) 0%,
+    rgba(147, 170, 194, 0) 100%
+  );
+}
