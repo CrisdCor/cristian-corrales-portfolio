@@ -1,12 +1,8 @@
-import BgImageAboutMe from "../../assets/Text/BackgroundAboutMe.svg";
 import "./styles.css";
 
 const PersonalSection = () => {
   return (
     <section className="personal-section">
-      <figure className="personal-section__image">
-        <img src={BgImageAboutMe} alt="" />
-      </figure>
       <div className="personal-section__text">
         <h2 className="personal-section__text--title text-center text-lg">
           01. Personal

@@ -10,13 +10,15 @@
 .list-container__item {
   width: 100%;
   text-align: center;
-  transform: translateX(-100%);
-  animation: show-list-items-menu 0.6s ease-in-out forwards;
+  transform: translateX(-120%);
+  animation: show-list-items-menu 0.4s ease-in-out forwards;
+  opacity: 0;
 }
 
 @keyframes show-list-items-menu {
   from {
     transform: translateX(-100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
@@ -25,17 +27,17 @@
 }
 
 .list-container__item--home {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .list-container__item--about-me {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 .list-container__item--projects {
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 
 .list-container__item--contact {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }

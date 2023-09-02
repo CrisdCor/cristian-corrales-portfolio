@@ -1,7 +1,24 @@
 .about-me {
+  position: relative;
   width: 100%;
   max-width: 128rem;
   height: auto;
-  margin: 8rem auto 1.8rem auto;
+  min-height: calc(100vh - 12rem);
+  margin: 12rem auto 0;
   padding: 0 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me--image {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  height: calc(100vh - 9.8rem);
+}
+
+.about-me__grid {
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 42rem), 1fr));
 }

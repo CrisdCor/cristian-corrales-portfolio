@@ -1,10 +1,8 @@
-@import url(../../Pages/App/Vars.css);
-
 .skills-card {
   position: relative;
   width: 100%;
-  max-width: 40rem;
-  height: 5.8rem;
+  max-width: 32rem;
+  height: 6.8rem;
   padding: 0.8rem;
   border: 0.1px solid var(--soft-blue);
   border-radius: 0.6rem;

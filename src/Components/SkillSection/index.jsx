@@ -14,7 +14,6 @@ const SkillSection = () => {
     { icon: IconJS, title: "JavaScript", projects: 3 },
     { icon: IconReact, title: "React", projects: 2 },
     { icon: IconFigma, title: "Figma", projects: 3 },
-
   ];
 
   return (
