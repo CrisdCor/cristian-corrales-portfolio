@@ -4,7 +4,7 @@ const PersonalSection = () => {
   return (
     <section className="personal-section">
       <div className="personal-section__text">
-        <h2 className="personal-section__text--title text-center text-lg">
+        <h2 className="personal-section__text--title text-left text-lg">
           01. Personal
         </h2>
         <div className="line-decoration">
@@ -20,7 +20,15 @@ const PersonalSection = () => {
           est assumenda quasi incidunt ad aliquam quidem libero maxime
           consequuntur? Sint, repudiandae! Vel veniam odit id. illo sint
           voluptatem eligendi in. libero maxime consequuntur? Sint, repudiandae!
-          Vel veniam odit id.
+          Vel veniam odit id. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Voluptas, ipsam quidem cum molestias eligendi aut
+          beatae dolore aliquam veniam recusandae rem adipisci ullam culpa illum
+          libero deserunt modi vitae m adipisci ullam culpa illum libero
+          deserunt modi vitae serunt modi vitae odit! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Voluptas, ipsam quidem cum molestias
+          eligendi aut beatae dolore aliquam veniam recusandae rem adipisci
+          ullam culpa illum libero deserunt modi vitae m adipisci ullam culpa
+          illum libero deserunt modi vitae serunt modi vitae odit!
         </p>
       </div>
     </section>

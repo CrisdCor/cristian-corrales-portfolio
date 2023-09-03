@@ -3,22 +3,25 @@
   width: 100%;
   max-width: 128rem;
   height: auto;
-  min-height: calc(100vh - 12rem);
-  margin: 12rem auto 0;
+  min-height: calc(100vh - 16rem);
+  margin: 16rem auto 0;
   padding: 0 1.8rem;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  gap: 1.8rem;
 }
 
 .about-me--image {
   z-index: 1;
   position: absolute;
+  top: -6.2rem;
   left: 0;
-  height: calc(100vh - 9.8rem);
+  height: calc(100vh - 12rem);
 }
 
 .about-me__grid {
   display: grid;
   gap: 1.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 42rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), 1fr));
 }
