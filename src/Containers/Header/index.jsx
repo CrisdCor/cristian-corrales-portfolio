@@ -16,7 +16,7 @@ const MyHeader = () => {
   return (
     <header className={`header ${cardClassName}`}>
       <div className="header__container">
-      <MainMenu />
+        <MainMenu />
         <ButtonMenu />
         <HeaderLogo />
       </div>

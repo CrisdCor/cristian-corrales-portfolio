@@ -1,3 +1,4 @@
+import IconLink from "../IconLink";
 import IconGithub from "../../assets/Icons/IconGithub.svg";
 import IconInstagram from "../../assets/Icons/IconInstagram.svg";
 import IconTwitter from "../../assets/Icons/IconTwitter.svg";
@@ -19,6 +20,7 @@ const SocialNetworks = () => {
       <a className="social-networks__icon" href={urltwitter} target="_blank">
         <img src={IconTwitter} alt="" />
       </a>
+      <IconLink />
     </div>
   );
 };

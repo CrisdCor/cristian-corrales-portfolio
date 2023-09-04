@@ -1,17 +1,18 @@
 .skills-card {
-  width: 23rem;
-  height: 7.2rem;
+  z-index: 1;
+  position: relative;
+  height: 6.2rem;
   padding: 0.6rem;
+  padding-left: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.9rem;
+  flex: 1 1 18rem;
   border-radius: 0.4rem;
   border: 0.1rem solid rgba(147, 170, 194, 0.4);
+  backdrop-filter: blur(3px);
 }
 
 .skills-card__icon {
-  width: 8.2rem;
+  width: 30%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@
 }
 
 .skills-card__icon img {
-  width: 100%;
+  width: 3.8rem;
 }
 
 .skills-card hr {
@@ -30,12 +31,14 @@
 }
 
 .skills-card__text {
-  width: 100%;
+  position: relative;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .skills-card__text--text {

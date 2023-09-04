@@ -12,8 +12,8 @@ const SkillSection = () => {
     { icon: IconHTML, title: "HTML", projects: 6 },
     { icon: IconCSS, title: "CSS", projects: 6 },
     { icon: IconJS, title: "JavaScript", projects: 3 },
-    { icon: IconReact, title: "React", projects: 2 },
     { icon: IconFigma, title: "Figma", projects: 3 },
+    { icon: IconReact, title: "React", projects: 2 },
   ];
 
   return (
@@ -26,20 +26,9 @@ const SkillSection = () => {
         <span className="line-decoration--circle"></span>
       </div>
       <div className="skills-section__cards">
-        <div className="cards__overflow cards__overflow--left"></div>
-        <div className="card__carrete-wrap">
-          <div className="cards__carrete">
-            {skillsData.map((skill, index) => (
-              <CardSkills key={index} skillData={skill} />
-            ))}
-          </div>
-          {/* <div className="cards__carrete">
-            {skillsData.map((skill, index) => (
-              <CardSkills key={index} skillData={skill} />
-            ))}
-          </div> */}
-        </div>
-        <div className="cards__overflow cards__overflow--right"></div>
+          {skillsData.map((skill, index) => (
+            <CardSkills key={index} skillData={skill} />
+          ))}
       </div>
     </section>
   );

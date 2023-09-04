@@ -1,6 +1,6 @@
 import Layout from "../../Components/Layout";
 import SocialNetworks from "../../Components/SocialNetworks";
-import NameBackgorund from "../../assets/Text/HomeName.svg";
+import NameBackgorund from "../../assets/Text/HomeName2.svg";
 import "./styles.css";
 
 function Home() {
@@ -10,15 +10,16 @@ function Home() {
       <div className="home-wrap">
         <main className="home">
           <section className="home__top-section">
-            <div className="top-section--text">
-              <p className="text-lg">Hola,</p>
-              <p className="text-lg">Yo soy</p>
-            </div>
             <img
               className="top-section--name-image"
               src={NameBackgorund}
               alt="Cristian Corrales"
-            />
+              />
+              <div className="top-section--shadow-decoration"></div>
+              {/* <div className="top-section--text">
+                <p className="text-lg">Hola,</p>
+                <p className="text-lg">Yo soy</p>
+              </div> */}
           </section>
           <section className="home__medium-section">
             <div className="line-decoration line-decoration--first">
@@ -33,9 +34,10 @@ function Home() {
           </section>
           <section className="home__bottom-section">
             <div>
-              <p className="text-m text-right">Profesional en Mercadeo &</p>
-              <p className="text-m text-right">Desarrollador Web</p>
+              <p className="text-lg text-left">Profesional en Mercadeo &</p>
+              <p className="text-lg text-left">Desarrollador Web</p>
             </div>
+
           </section>
         </main>
         <SocialNetworks />
