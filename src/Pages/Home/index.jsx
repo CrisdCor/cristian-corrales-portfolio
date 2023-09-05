@@ -1,10 +1,10 @@
 import Layout from "../../Components/Layout";
-import SocialNetworks from "../../Components/SocialNetworks";
+import Footer from "../../Components/Footer";
+
 import NameBackgorund from "../../assets/Text/HomeName2.svg";
 import "./styles.css";
 
 function Home() {
-
   return (
     <Layout>
       <div className="home-wrap">
@@ -14,9 +14,9 @@ function Home() {
               className="top-section--name-image"
               src={NameBackgorund}
               alt="Cristian Corrales"
-              />
-              <div className="top-section--shadow-decoration"></div>
-              {/* <div className="top-section--text">
+            />
+            <div className="top-section--shadow-decoration"></div>
+            {/* <div className="top-section--text">
                 <p className="text-lg">Hola,</p>
                 <p className="text-lg">Yo soy</p>
               </div> */}
@@ -37,10 +37,9 @@ function Home() {
               <p className="text-lg text-left">Profesional en Mercadeo &</p>
               <p className="text-lg text-left">Desarrollador Web</p>
             </div>
-
           </section>
         </main>
-        <SocialNetworks />
+        <Footer />
       </div>
     </Layout>
   );
