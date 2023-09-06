@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  padding: 6rem;
+  border-top: 0.1rem solid var(--white-border);
+}
+
+.footer__social-networks{
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icons{
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0 0.9rem;
+}
+
+.icons img{
+  width: 2.8rem;
+  height: 2.8rem;
+  
+}

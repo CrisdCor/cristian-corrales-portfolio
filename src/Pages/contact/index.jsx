@@ -1,5 +1,5 @@
 import Layout from "../../Components/Layout";
-import ContactTopSection from "../../Components/ContactTopSection";
+import Footer from "../../Components/Footer";
 import FormContact from "../../Containers/FormContact";
 import EllipseDecoration from "../../Components/EllipseDecoration";
 import BgImageContact from "../../assets/Text/BackgroundContact.svg";
@@ -12,7 +12,7 @@ function Contact() {
         <img className="contact--image" src={BgImageContact} alt="Contacto" />
         <div className="contact-wrap">
           <FormContact />
-          <ContactTopSection />
+          <Footer />
         </div>
         <EllipseDecoration />
       </main>
