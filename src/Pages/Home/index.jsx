@@ -1,5 +1,4 @@
 import Layout from "../../Components/Layout";
-import Footer from "../../Components/Footer";
 
 import NameBackgorund from "../../assets/Text/HomeName2.svg";
 import "./styles.css";
@@ -39,7 +38,6 @@ function Home() {
             </div>
           </section>
         </main>
-        <Footer />
       </div>
     </Layout>
   );

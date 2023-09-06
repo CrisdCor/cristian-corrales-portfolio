@@ -1,5 +1,3 @@
-import SocialNetworks from "../../Components/SocialNetworks";
-
 import "./styles.css";
 
 const ContactTopSection = () => {
@@ -11,7 +9,6 @@ const ContactTopSection = () => {
       >
         cristiandavid.corrales@gmail.com
       </a>
-      <SocialNetworks />
     </section>
   );
 };
