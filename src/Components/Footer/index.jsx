@@ -1,7 +1,7 @@
 import GitHub from "../../assets/Icons/IconGithub.svg";
-import Twitter from "../../assets/Icons/IconInstagram.svg";
-import Instagram from "../../assets/Icons/IconTwitter.svg";
-import Gmail from "../../assets/Icons/IconGmail.svg";
+import Twitter from "../../assets/Icons/IconTwitter.svg";
+import Instagram from "../../assets/Icons/IconInstagram.svg";
+import CopyMail from "../Mail";
 import "./styles.css";
 
 const Footer = () => {
@@ -15,21 +15,20 @@ const Footer = () => {
         correo.
       </p>
       <section className="footer__social-networks">
-        <a className="icons" href="">
+        <a className="icons" href="https://github.com/CrisdCor" target="_blank">
           <img src={GitHub} alt="" />
         </a>
         <hr />
-        <a className="icons" href="">
-          <img src={Instagram} alt="" />
-        </a>
-        <hr />
-        <a className="icons" href="">
+        <a className="icons" href="https://twitter.com/CristianCorra11" target="_blank">
           <img src={Twitter} alt="" />
         </a>
         <hr />
-        <a className="icons" href="mailto:cristiandavid.corrales@gmail.com">
-          <img src={Gmail} alt="" />
+        <a className="icons" href="https://www.instagram.com/crisd_cor" target="_blank">
+          <img src={Instagram} alt="" />
         </a>
+        <hr />
+        <CopyMail />
+
       </section>
     </footer>
   );
