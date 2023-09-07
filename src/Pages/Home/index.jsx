@@ -1,4 +1,4 @@
-import Footer from "../../Components/Footer"
+import Footer from "../../Components/Footer";
 import Layout from "../../Components/Layout";
 
 import NameBackgorund from "../../assets/Text/HomeName2.svg";
@@ -39,10 +39,8 @@ function Home() {
             </div>
           </section>
         </main>
-
+        <Footer />
       </div>
-      <Footer/>
-
     </Layout>
   );
 }
