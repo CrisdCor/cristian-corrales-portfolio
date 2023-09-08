@@ -2,30 +2,15 @@
   position: relative;
   width: 100%;
   padding: 3.2rem 0;
-  /* border-top: 0.1rem solid var(--white-border); */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
 }
 
 .footer__text {
   width: 100%;
-  padding: 1.8rem 0;
   text-shadow: 8px 4px 16px;
-}
-
-.footer__social-networks {
-  z-index: 2;
-  width: 100%;
-  height: 4.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__social-networks hr {
-  width: 0.1rem;
-  height: 80%;
-  border: none;
-  background: var(--white-border);
 }
 
 .icons {
