@@ -1,4 +1,4 @@
-import ButtonContact from "../ButtonContact";
+import MenuContact from "../MenuContact";
 import "./styles.css";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
         No dudes en contactarme a través de mis redes sociales o enviándome un
         correo.
       </p>
-      <ButtonContact/>
+      <MenuContact />
     </footer>
   );
 };

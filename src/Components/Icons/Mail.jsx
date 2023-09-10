@@ -1,9 +1,9 @@
-import Icon from "../../assets/Icons/IconInstagram.svg";
+import Icon from "../../assets/Icons/IconGmail.svg";
 import "./styles.css";
 
-const Instagram = () => {
+const Mail = () => {
   const url = "https://github.com/CrisdCor";
-  const caption = "Instagram";
+  const caption = "Gmail";
   const image = Icon;
 
   return (
@@ -13,4 +13,4 @@ const Instagram = () => {
   );
 };
 
-export default Instagram;
+export default Mail;

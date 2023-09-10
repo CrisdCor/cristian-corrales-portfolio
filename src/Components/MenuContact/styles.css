@@ -1,0 +1,184 @@
+.contact-wrap {
+  position: relative;
+}
+
+.button-contact-background {
+  width: auto;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.6rem;
+  border-radius: 0.4rem;
+  border-left: 0.1rem solid var(--cyan);
+  border-right: 0.1rem solid var(--cyan);
+  animation: close-icons-animation 0.7s ease-in-out both;
+  transform: scaleX(0.1);
+}
+
+@keyframes close-icons-animation {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+.button-contact-background--show-icons {
+  animation: open-icons-animation 0.7s ease-in-out both;
+}
+
+@keyframes open-icons-animation {
+  0% {
+    width: 4.2rem;
+    opacity: 0;
+  }
+  100% {
+    width: 26rem;
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.button-contact__space-button {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+.button-contact {
+  position: absolute;
+  width: 16rem;
+  height: 4.2rem;
+  padding: 0 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-blue);
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--white-border);
+  transition: border 0.6s;
+}
+
+.button-contact:hover {
+  border: 0.1rem solid var(--hover-border);
+  transition: border 0.4s;
+}
+
+.button-contact--hidden-icons {
+  animation: contact-close-animation 0.6s ease-in-out both;
+}
+
+@keyframes contact-close-animation {
+  0% {
+    width: 4.2rem;
+    border-radius: 50%;
+  }
+  100% {
+    width: 15.8rem;
+  }
+}
+
+.button-contact--show-icons {
+  animation: contact-open-animation 0.5s ease-in-out both;
+}
+
+@keyframes contact-open-animation {
+  0% {
+    width: 15.8rem;
+  }
+  70% {
+    border-radius: 0.4rem;
+  }
+  100% {
+    width: 4.2rem;
+    border-radius: 50%;
+  }
+}
+
+/* Estilos para el texto del botón */
+.button-contact__text {
+  position: absolute;
+  cursor: context-menu;
+  transition: letter-spacing 0.3s;
+}
+
+.button-contact-text--show-icons {
+  animation: tracking-out-contract 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+}
+
+@keyframes tracking-out-contract {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+
+.button-contact-text--hidden-icons {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation-delay: 0.2s;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos para ícono de cierre */
+
+.button-contact__icon {
+  position: absolute;
+  width: 1.8rem;
+}
+
+.button-contact__icon--hidden-icons {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.3s;
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button-contact__icon--show-icons {
+  animation: scale-out-center 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+}

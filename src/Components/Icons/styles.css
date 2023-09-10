@@ -1,0 +1,9 @@
+.icon-wrap {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.icon-wrap--image {
+  width: 2.8rem;
+  transform: translateX(-2.6rem);
+}
