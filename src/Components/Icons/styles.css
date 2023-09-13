@@ -1,9 +1,7 @@
 .icon-wrap {
-  width: 3.6rem;
-  height: 3.6rem;
+  /* position: absolute; */
 }
 
 .icon-wrap--image {
-  width: 2.8rem;
-  transform: translateX(-2.6rem);
+  width: 2.4rem;
 }

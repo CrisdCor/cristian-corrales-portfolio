@@ -7,7 +7,7 @@ const GitHub = () => {
   const image = Icon;
 
   return (
-    <a className="icon-wrap" href={url}>
+    <a className="icon-wrap" href={url} target="_blank">
       <img className="icon-wrap--image" src={image} alt={caption} />
     </a>
   );
