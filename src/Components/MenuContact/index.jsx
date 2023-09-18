@@ -15,6 +15,10 @@ const MenuContact = () => {
 
   const isClosed = stateContact === false;
 
+  const contactClassName=isClosed
+  ? "contact-section contact-section--hidden"
+  : "contact-section contact-section--show";
+
   const buttonClassName = isClosed
     ? "button-contact button-contact--hidden-icons"
     : "button-contact button-contact--show-icons";
@@ -28,7 +32,7 @@ const MenuContact = () => {
     : "button-contact__icon button-contact__icon--hidden-icons";
 
   return (
-    <div className="contact-section">
+    <div className={contactClassName}>
       <GitHub />
       <Instagram />
       <Twitter />

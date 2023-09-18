@@ -1,5 +1,6 @@
 import Footer from "../../Components/Footer";
 import Layout from "../../Components/Layout";
+import MenuContact from "../../Components/MenuContact";
 
 import NameBackgorund from "../../assets/Text/HomeName2.svg";
 import "./styles.css";
@@ -16,10 +17,6 @@ function Home() {
               alt="Cristian Corrales"
             />
             <div className="top-section--shadow-decoration"></div>
-            {/* <div className="top-section--text">
-                <p className="text-lg">Hola,</p>
-                <p className="text-lg">Yo soy</p>
-              </div> */}
           </section>
           <section className="home__medium-section">
             <div className="line-decoration line-decoration--first">
@@ -38,8 +35,8 @@ function Home() {
               <p className="text-lg text-left">Desarrollador Web</p>
             </div>
           </section>
+          <MenuContact/>
         </main>
-        <Footer />
       </div>
     </Layout>
   );
