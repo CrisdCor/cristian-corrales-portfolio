@@ -2,7 +2,7 @@ import Icon from "../../assets/Icons/IconTwitter.svg";
 import "./styles.css";
 
 const Twitter = () => {
-  const url = "https://github.com/CrisdCor";
+  const url = "https://twitter.com/CristianCorra11";
   const caption = "Twitter";
   const image = Icon;
 

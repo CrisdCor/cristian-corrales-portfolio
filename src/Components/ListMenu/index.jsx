@@ -4,7 +4,6 @@ import { MenuContext } from "../../Context";
 import TextHome from "../../assets/Text/MenuListHome.svg";
 import TextAboutMe from "../../assets/Text/MenuListAboutMe.svg";
 import TextProjects from "../../assets/Text/MenuListProjects.svg";
-import TextContact from "../../assets/Text/MenuListContact.svg";
 import "./styles.css";
 
 const ListMenu = () => {
@@ -25,11 +24,6 @@ const ListMenu = () => {
       <li className="list-container__item list-container__item--projects" onClick={context.closeMenu}>
         <NavLink to="/projects">
           <img src={TextProjects} alt="Texto Proyectos" />
-        </NavLink>
-      </li>
-      <li className="list-container__item list-container__item--contact" onClick={context.closeMenu}>
-        <NavLink to="/contact">
-          <img src={TextContact} alt="Texto Contacto" />
         </NavLink>
       </li>
     </ul>

@@ -2,7 +2,7 @@ import Icon from "../../assets/Icons/IconInstagram.svg";
 import "./styles.css";
 
 const Instagram = () => {
-  const url = "https://github.com/CrisdCor";
+  const url = "https://www.instagram.com/crisd_cor/";
   const caption = "Instagram";
   const image = Icon;
 

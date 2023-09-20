@@ -18,7 +18,6 @@
 .home__top-section {
   position: relative;
   width: 100%;
-  /* height: 16rem; */
   display: flex;
 }
 
@@ -32,13 +31,13 @@
   max-width: 62rem;
 }
 
-.top-section--shadow-decoration{
+.top-section--shadow-decoration {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10, 11, 35, 0) 26%, #0A0B23 98%);
+  background: linear-gradient(180deg, rgba(10, 11, 35, 0) 26%, #0a0b23 98%);
 }
 
 .home__medium-section {
@@ -57,4 +56,11 @@
 .home__bottom-section {
   width: 100%;
   height: auto;
+  margin: 1.8rem 0;
+}
+
+@media screen and (min-width: 767px) {
+  .home__bottom-section .bottom-section--text {
+    font-size: 2.4rem;
+  }
 }

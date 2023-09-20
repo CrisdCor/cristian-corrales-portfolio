@@ -4,7 +4,6 @@ import { ProjectProvider } from "../../Context/ProjectContext";
 import Home from "../Home";
 import AboutMe from "../about-me";
 import Projects from "../projects";
-import Contact from "../contact";
 import NotFound from "../not-found";
 import MyHeader from "../../Containers/Header";
 import "./App.css";
@@ -16,7 +15,6 @@ const AppRoutes = () => {
     { path: "/", element: <Home /> },
     { path: "/about-me", element: <AboutMe /> },
     { path: "/projects", element: <Projects /> },
-    { path: "/contact", element: <Contact /> },
     { path: "/*", element: <NotFound /> },
   ]);
   return routes;

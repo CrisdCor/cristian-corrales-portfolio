@@ -1,4 +1,3 @@
-import Footer from "../../Components/Footer";
 import Layout from "../../Components/Layout";
 import MenuContact from "../../Components/MenuContact";
 
@@ -31,8 +30,8 @@ function Home() {
           </section>
           <section className="home__bottom-section">
             <div>
-              <p className="text-lg text-left">Profesional en Mercadeo &</p>
-              <p className="text-lg text-left">Desarrollador Web</p>
+              <p className="bottom-section--text text-l text-right">Profesional en Mercadeo &</p>
+              <p className="bottom-section--text text-l text-right">Desarrollador Web</p>
             </div>
           </section>
           <MenuContact/>

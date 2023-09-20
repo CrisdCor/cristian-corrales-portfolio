@@ -1,5 +1,5 @@
 import Layout from "../../Components/Layout";
-import AllProjects from "../../Containers/AllProjects";
+import ProjectsGrid from "../../Containers/ProjectsGrid";
 import CardDetailProject from "../../Containers/CardDetailProject";
 import BgImageProjects from "../../assets/Text/BackgroundProjects.svg";
 import "./styles.css";
@@ -9,7 +9,7 @@ function Projects() {
     <Layout>
       <main className="projects">
         <img className="projects__title" src={BgImageProjects} alt="" />
-        <AllProjects />
+        <ProjectsGrid />
         <CardDetailProject />
       </main>
     </Layout>
